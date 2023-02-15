@@ -1,7 +1,14 @@
 from discord.ext import commands
 import discord
+from cmath import log
+from distutils.sysconfig import PREFIX
+from dotenv import load_dotenv
+import os
+load_dotenv()
 
-BOT_TOKEN = "MTA3NDkwMDE2NzI2Nzk5MTY0Mg.GFVzZZ.2JFZ3l0bd6gsVLjnLK8YWdjuWziGO7gM_YeV10"
+PREFIX = os.environ['PREFIX']
+TOKEN = os.environ['TOKEN']
+
 CHANNEL_ID = 1074259672304984126
 
 bot = commands.Bot(command_prefix=">", intents=discord.Intents.all())
