@@ -25,7 +25,7 @@ async def on_message(message):
     if message.content.startswith(f'{PREFIX}hello'):
         await message.channel.send('Hello!')
         
-    if message.content.startswith(f'{PREFIX}hi'):
+    if message.content == f'{PREFIX}hi':
         await message.channel.send('Hi!')
 
 try:
