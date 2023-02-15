@@ -79,4 +79,4 @@ async def Help(ctx):
 async def gangmin(ctx):
     await ctx.send("Handsome Man")
 
-bot.run(BOT_TOKEN)
+bot.run(TOKEN)
